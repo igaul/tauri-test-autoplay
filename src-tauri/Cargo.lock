@@ -3650,8 +3650,7 @@ dependencies = [
 [[package]]
 name = "wry"
 version = "0.19.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ce19dddbd3ce01dc8f14eb6d4c8f914123bf8379aaa838f6da4f981ff7104a3f"
+source = "git+https://github.com/tauri-apps/wry?branch=autoplay-0.19#1f0de51ed7485070985f0fafce2dc5eccabc2d11"
 dependencies = [
  "block",
  "cocoa",

@@ -17,5 +17,22 @@
   </style>
   <body>
     <h1>tauri-test-autoplay</h1>
+    <audio src="./test.mp3" controls />
+
+    <script>
+      const audio = document.querySelector("audio");
+      var promise = audio.play();
+      console.log("playing?");
+
+      if (typeof promise !== "undefined") {
+        promise
+          .then(function () {
+            console.log("playing");
+          })
+          .catch(function (error) {
+            console.log("not playing", error);
+          });
+      }
+    </script>
   </body>
 </html>
